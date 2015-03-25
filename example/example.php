@@ -1,6 +1,6 @@
 <?php
 
-require_once("tpl.php");
+require_once("../src/strontium_tpl.php");
 
 // Parsing data.csv
 $demo_data = array();
