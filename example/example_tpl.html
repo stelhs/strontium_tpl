@@ -1,0 +1,40 @@
+
+<!-- START INSERT : example_tpl_win.html -->
+    <color>blue</color>
+    <header>Strontium teamplater engine Demo</header>
+<!-- END INSERT : example_tpl_win.html -->
+
+// Data table
+<!-- START BLOCK : data_table -->
+    <table border="1">
+        <tr>
+            <th>Time</th>
+            <th>Source</th>
+            <th>Type</th>
+            <th>Count</th>
+        </tr>
+        <!-- START BLOCK : row_table -->
+            <tr>
+                <td>{time}</td>
+                <td>{source}</td>
+                <td>{type}</td>
+                <td>{count}</td>
+            </tr>
+        <!-- END BLOCK : row_table -->
+    </table>
+<!-- END BLOCK : data_table -->
+
+// if data not exist
+<!-- START BLOCK : no_data -->
+    <!-- START INSERT : example_tpl_win.html -->
+        <color>red</color>
+        <header>Error</header>
+        <message>Data Not found</message>
+        <!-- START ASSIGN : button1 -->
+            <name>Close</name>
+        <!-- END ASSIGN : button1 -->
+        <!-- START ASSIGN : button1 -->
+            <name>exit</name>
+        <!-- END ASSIGN : button1 -->
+    <!-- END INSERT : example_tpl_win.html -->
+<!-- END BLOCK : no_data -->
