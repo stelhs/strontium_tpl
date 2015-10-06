@@ -4,7 +4,7 @@ require_once("../src/strontium_tpl.php");
 
 // Parsing data.csv
 $demo_data = array();
-$csv = file_get_contents("data.csv");
+@$csv = file_get_contents("data.csv");
 $strings = explode("\n", $csv);
 if ($strings)
     foreach ($strings as $string) {
@@ -26,7 +26,7 @@ $tpl->assign();
 // If data.csv is empty
 if (!$demo_data) {
     $tpl->assign("no_data");
-    echo $tpl->make_result();
+    echo $tpl->result();
     exit;
 }
 
