@@ -8,3 +8,5 @@ strontium_tpl:assign()<br>
 strontium_tpl:result()<br>
 
 See usage example in the examples directory.
+
+Strontium teamplater for Lua: https://github.com/EvgenyMakhnovets/LuaTemplater
